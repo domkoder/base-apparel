@@ -27,19 +27,24 @@
   <body>
     <main>
       <section id="first-section">
+        <header>
+          <img class="logo" src="images/logo.svg" alt="Logo image" />
+        </header>
+        <img class="mobile-img" src="/images/hero-mobile.jpg" alt="" />
+
         <div class="container">
-          <header>
-            <img class="logo" src="images/logo.svg" alt="Logo image" />
-          </header>
-          <div class="mobile-img"></div>
           <h1><span>We're</span> coming soon</h1>
           <p>
             Hello fellow shoppers! We're currently building our new fashion store. Add your email
             below to stay up-to-date with announcements and our launch deals.
           </p>
           <form action="#">
-            <input type="email" id="email" />
-            <button type="submit"><img src="images/icon-arrow.svg" alt="Icon Arrow" /></button>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Emial Address" />
+              <button class="btn" type="submit">
+                <img src="images/icon-arrow.svg" alt="Icon Arrow" />
+              </button>
+            </div>
           </form>
         </div>
       </section>
