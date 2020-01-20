@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      form .form-inline {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        /*flex-flow: row wrap;
+        
+        margin: 2rem 0 1rem 0; */
+      }
+
+      form .form-inline .inline {
+        margin-left: -60px;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div class="form-inline">
+        <input type="email" id="email" placeholder="Email Address" />
+        <div class="inline">
+          <img class="icon-error hide" src="images/icon-error.svg" alt="Icon Error" />
+          <button class="btn" type="submit">
+            <img src="images/icon-arrow.svg" alt="Icon Arrow" />
+          </button>
+        </div>
+      </div>
+      <small class="error">Pleas provide a valid email.</small>
+    </form>
+  </body>
+</html>

@@ -6,7 +6,7 @@
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
@@ -14,16 +14,6 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-        padding: 1rem;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -40,26 +30,31 @@
             below to stay up-to-date with announcements and our launch deals.
           </p>
           <form action="#">
-            <div class="form-group">
+            <div class="form-inline">
               <input type="email" id="email" placeholder="Email Address" />
-              <button class="btn" type="submit">
-                <img src="images/icon-arrow.svg" alt="Icon Arrow" />
-              </button>
+              <div class="inline">
+                <img class="icon-error hide" src="images/icon-error.svg" alt="Icon Error" />
+                <button class="btn" type="submit">
+                  <img src="images/icon-arrow.svg" alt="Icon Arrow" />
+                </button>
+              </div>
             </div>
+            <small class="error hide">Pleas provide a valid email.</small>
           </form>
         </div>
       </section>
 
       <section id="second-section">
-        <div class="desktop-img"><img src="images/hero-desktop.jpg" alt="Hero Desktop" /></div>
+        <img src="images/hero-desktop.jpg" alt="Hero Desktop" />
       </section>
     </main>
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://twitter.com/articleTag">@articleTag</a>.
       </p>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

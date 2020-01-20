@@ -1,4 +1,12 @@
-/* Smart Phones */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 * {
   font-family: 'Josefin Sans', sans-serif;
   box-sizing: border-box;
@@ -26,7 +34,7 @@ main {
 }
 
 #first-section header .logo {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #first-section {
@@ -34,7 +42,7 @@ main {
 }
 
 #first-section .container h1 {
-  margin: 2rem auto 1rem auto;
+  margin: 1.5rem auto 1rem auto;
   text-transform: uppercase;
   font-size: 2.3rem;
   letter-spacing: 1rem;
@@ -45,7 +53,6 @@ main {
 
 #first-section .container h1 span {
   font-weight: 100;
-  font-stretch: 200%;
   color: hsl(0, 36%, 70%);
 }
 
@@ -55,7 +62,7 @@ main {
   line-height: 1.5rem;
 }
 
-form .form-group {
+form .form-inline {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -63,10 +70,10 @@ form .form-group {
   margin: 2rem 0 1rem 0;
 }
 
-form .form-group input {
+form .form-inline input {
   font-size: 16px;
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   color: hsl(0, 36%, 70%);
   border: 1px solid hsl(0, 36%, 70%);
   border-radius: 50px;
@@ -74,7 +81,7 @@ form .form-group input {
   line-height: 19px;
 }
 
-form .form-group .btn {
+form .form-inline .btn {
   outline: none;
   border-radius: 50px;
   z-index: 1;
@@ -85,13 +92,33 @@ form .form-group .btn {
   box-shadow: -7px 22px 16px -10px rgba(0, 0, 0, 0.17);
 }
 
-form .form-group .btn:hover {
+form .form-inline .btn:hover {
   cursor: pointer;
   background: hsl(0, 36%, 70%);
 }
 
-form .form-group .btn img {
-  padding: 15px 30px 15px 30px;
+form .form-inline .btn img {
+  padding: 12px 30px 12px 30px;
+}
+
+form .form-inline .inline {
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+form .form-inline .icon-error {
+  position: absolute;
+  right: 100px;
+}
+
+form .error {
+  color: hsl(0, 93%, 68%);
+}
+
+.hide {
+  display: none;
 }
 
 /* Tablet */
@@ -101,14 +128,15 @@ form .form-group .btn img {
   }
 
   #first-section .container h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 
 /* Normal  */
 @media (min-width: 769px) /*and (max-width: 1440px) */ {
   main {
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -123,13 +151,36 @@ form .form-group .btn img {
   }
 
   .container {
-    padding: 8rem;
+    padding: 5rem 13rem 13rem 9rem;
     text-align: left;
   }
 
+  #first-section {
+    height: 805px;
+  }
+
+  #first-section header .logo {
+    margin: 2rem 0 0 9rem;
+  }
+
   #first-section .container h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-    letter-spacing: 1.8rem;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+    letter-spacing: 1.3rem;
+  }
+
+  form .form-inline input {
+    padding: 15px;
+  }
+
+  form .form-inline .btn img {
+    padding: 15px 40px 15px 40px;
+  }
+
+  form .form-inline .inline {
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    position: relative;
   }
 }
